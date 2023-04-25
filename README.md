@@ -16,6 +16,10 @@ docker rm **the-container-id**<br>
 ## **Show Logs**
 
  docker-compose logs -f<br>
+ 
+
+## **Entrar em bash do container**
+docker exec -it **nome do container no compose.yml** bash
 
 ## **install make on windows install**
 
@@ -23,3 +27,7 @@ make Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointM
 choco install make
 
 ## LARAVEL
+
+### JWT User
+composer require tymon/jwt-auth
+php artisan vendor:publish  - selecione o jwt - gera o config
